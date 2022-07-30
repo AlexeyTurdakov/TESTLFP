@@ -1,3 +1,18 @@
 body {
-    background-color: yellow;
+  background-color: yellow;
+}
+
+.d {
+  background-color: red;
+  padding: 10%;
+}
+
+.s {
+    width: 100px;
+    background-color: green;
+}
+
+p img {
+  width: 100px;
+  height: 100px;
 }

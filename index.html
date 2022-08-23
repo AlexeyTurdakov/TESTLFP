@@ -2,74 +2,114 @@
 <!DOCTYPE html>
 <!-- Оболочка документа, указываем язык содержимого -->
 <html lang="ru">
-  <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
-  <head>
-    <!-- Заголовок страницы в браузере -->
-    <title>FLEXBOX</title>
-    <!-- Адаптив -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
-    <!-- Подключаем CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- Кодировка страницы -->
-    <meta charset="UTF-8" />
-  </head>
-  <!-- Отображаемое тело страницы -->
-  <body>
-    <div class="wrapper">
-      <div class="content">
-        <header class="header">
-			<div class="container">
-				<div class="header__content">
-					<div class="header__text">
-					  <div class="header__title">Привет, друг!</div>
-					  <ul class="header__list">
-						<li>
-						  У тебя все получится! 
-						  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, velit quisquam? Suscipit, distinctio esse? Optio quaerat dolores vel repellat harum, consequatur minima maiores provident autem ad sapiente sed. Animi, mollitia.
-						</li>
-						<li>
-						  У тебя все получится! 
-						</li>
-						<li>
-						  У тебя все получится!
-						</li>
-						<li>
-						  У тебя все получится!
-						</li>
-					  </ul>
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Верстка изображений</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Кодировка страницы -->
+		<meta charset="UTF-8">
+		<!-- Адаптив -->
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<!-- Оболочка для демонстрации -->
+		<div class="wrapper">
+			<!-- Контент -->
+			<div class="content">
+				<section class="text">
+					<h2 class="text__title title">В тексте</h2>
+					<div class="text__image">
+						<img src="./img/1300x400.jpg" alt="">
 					</div>
-					<div class="header__image">
-					  <img src="./img/image.jpg" alt="header image" />
-				  </div>
-			</div>
-        </header>
-
-		<section class="what">
-			<div class="container">
-				<div class="what__row">
-					<div class="what__img">
-						<img src="./img/image_2.jpg" alt="img2">
+					<div class="text__value">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque nesciunt adipisci.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque nesciunt adipisci.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque nesciunt adipisci.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque nesciunt adipisci.</p>
 					</div>
-					<div class="what__content">
-						<div class="what__title">Что такое FlexBox?</div>
-						<p>Flexbox - это целый модуль, содержащий в себе набор свойств и их значений как для родителя flex-контейнера так и для его дочерних элементов flex-элементов.</p>
-						<p>Основным преимуществом гибкой FLEX разметки является возможность изменять ширину/высоту пространство вокруг и порядок flex-элементов, для того чтобы наилучшим образом заполнить доступное пространство flex-контейнера</p>
+					<div class="text__image">
+						<img src="./img/800x400.jpg" alt="">
 					</div>
-				</div>
-			</div>
-		</section>
-      </div>
-
-      <footer class="footer">
-		<div class="container">
-			<div class="footer__content">
-				Фрилансер по жизни 2019
+					<div class="text__value">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque nesciunt adipisci.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque nesciunt adipisci.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque nesciunt adipisci.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque nesciunt adipisci.</p>
+					</div>
+				</section>
+				<section class="cards">
+					<h2 class="cards__title title">В карточках (три колонки)</h2>
+					<div class="cards__row">
+						<div class="cards__column">
+							<div class="cards__item">
+								<div class="cards__image">
+									<img src="./img/800x400.jpg" alt="">
+								</div>
+								<div class="cards__body">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti a voluptatibus autem eaque aut nisi quis ex sequi! Ducimus necessitatibus deleniti mollitia ex dignissimos odio obcaecati totam est nesciunt?
+								</div>
+							</div>
+						</div>
+						<div class="cards__column">
+							<div class="cards__item">
+								<div class="cards__image">
+									<img src="./img/400x600.jpg" alt="">
+								</div>
+								<div class="cards__body">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti a voluptatibus autem eaque aut nisi quis ex sequi! Ducimus necessitatibus deleniti mollitia ex dignissimos odio obcaecati totam est nesciunt?
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti a voluptatibus autem eaque aut nisi quis ex sequi! Ducimus necessitatibus deleniti mollitia ex dignissimos odio obcaecati totam est nesciunt?
+								</div>
+							</div>
+						</div>
+						<div class="cards__column">
+							<div class="cards__item">
+								<div class="cards__image">
+									<img src="./img/1300x200.jpg" alt="">
+								</div>
+								<div class="cards__body">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti a voluptatibus autem eaque aut nisi quis ex sequi! Ducimus necessitatibus deleniti mollitia ex dignissimos odio obcaecati totam est nesciunt?
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="items">
+					<h2 class="items__title title">В карточках (в ряд)</h2>
+					<div class="items__item">
+						<div class="items__image">
+							
+						</div>
+						<div class="items__body">
+							<div class="items__label">Заголовок</div>
+							<div class="items__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quam tempore ea animi quo nemo quasi quaerat voluptatem magni perferendis sequi distinctio veritatis, accusantium, unde modi repellendus nostrum ut fuga.</div>
+						</div>
+					</div>
+					<div class="items__item">
+						<div class="items__image">
+							
+						</div>
+						<div class="items__body">
+							<div class="items__label">Заголовок</div>
+							<div class="items__text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quam tempore ea animi quo nemo quasi quaerat voluptatem magni perferendis sequi distinctio veritatis, accusantium, unde modi repellendus nostrum ut fuga.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quam tempore ea animi quo nemo quasi quaerat voluptatem magni perferendis sequi distinctio veritatis, accusantium, unde modi repellendus nostrum ut fuga.
+							</div>
+						</div>
+					</div>
+					<div class="items__item">
+						<div class="items__image">
+							
+						</div>
+						<div class="items__body">
+							<div class="items__label">Заголовок</div>
+							<div class="items__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quam tempore ea animi quo nemo quasi quaerat voluptatem magni perferendis sequi distinctio veritatis, accusantium, unde modi repellendus nostrum ut fuga.</div>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
-	  </footer>
-    </div>
-  </body>
+	</body>
 </html>

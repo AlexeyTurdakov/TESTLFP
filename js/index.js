@@ -11,3 +11,4 @@ function getArr(num) {
 }
 
 console.log(getArr(17));
+

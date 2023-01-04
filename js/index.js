@@ -1,15 +1,13 @@
-const person = {
-  name: "Vlad",
-  age: 12,
-  email: "fg@ru",
-};
+function getArr(num) {
+  let arr = [];
 
-const op = new Proxy(person, {
-  get(target, prop) {
-    return target[prop];
-  },
+  for (let i = num; i >= 0; i--) {
+    if (i % 3 === 0) {
+      arr.push(i);
+    }
+  }
 
-  set(target, props, value) {},
+  return arr;
+}
 
-  has(target, prop) {},
-});
+console.log(getArr(17));

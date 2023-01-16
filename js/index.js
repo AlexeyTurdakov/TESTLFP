@@ -1,14 +1,23 @@
-function getArr(num) {
-  let arr = [];
-
-  for (let i = num; i >= 0; i--) {
-    if (i % 3 === 0) {
-      arr.push(i);
+function funnBizz() {
+  const arr = [];
+  for (let index = 1; index <= 100; index++) {
+    if (index % 3 === 0) {
+      if (index % 5 === 0) {
+        arr.push("funnbizz");
+        continue;
+      }
+      arr.push("funn");
+      continue;
     }
+
+    if (index % 3 === 0) {
+      arr.push("bizz");
+      continue;
+    }
+    arr.push(index);
   }
 
   return arr;
 }
-
-console.log(getArr(17));
+console.log(funnBizz());
 

@@ -1,23 +1,12 @@
-function funnBizz() {
-  const arr = [];
-  for (let index = 1; index <= 100; index++) {
-    if (index % 3 === 0) {
-      if (index % 5 === 0) {
-        arr.push("funnbizz");
-        continue;
-      }
-      arr.push("funn");
-      continue;
-    }
+function Num(number) {
+  let factorNum = 1;
 
-    if (index % 3 === 0) {
-      arr.push("bizz");
-      continue;
-    }
-    arr.push(index);
+  for (let i = 2; i <= number; i++) {
+   factorNum *= i;
   }
 
-  return arr;
+  return String(factorNum).split('').reduce((acc, curr) => Number(acc) + Number(curr))
 }
-console.log(funnBizz());
 
+
+console.log(Num(100));

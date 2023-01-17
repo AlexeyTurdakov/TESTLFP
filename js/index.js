@@ -1,14 +1,12 @@
-function getArr(num) {
-  let arr = [];
+function Num(number) {
+  let factorNum = 1;
 
-  for (let i = num; i >= 0; i--) {
-    if (i % 3 === 0) {
-      arr.push(i);
-    }
+  for (let i = 2; i <= number; i++) {
+   factorNum *= i;
   }
 
-  return arr;
+  return String(factorNum).split('').reduce((acc, curr) => Number(acc) + Number(curr))
 }
 
-console.log(getArr(17));
 
+console.log(Num(100));

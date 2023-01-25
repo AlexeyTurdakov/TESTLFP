@@ -1,12 +1,11 @@
-function Num(number) {
-  let factorNum = 1;
 
-  for (let i = 2; i <= number; i++) {
-   factorNum *= i;
-  }
 
-  return String(factorNum).split('').reduce((acc, curr) => Number(acc) + Number(curr))
+
+function apl(str) {
+    return Boolean(str.match(/\*/));
 }
 
-
-console.log(Num(100));
+console.log(apl('string'));
+console.log(apl('st*ring'));
+console.log(apl('string*'));
+console.log(apl('string'));

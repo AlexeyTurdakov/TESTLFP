@@ -9,3 +9,6 @@ console.log(apl('string'));
 console.log(apl('st*ring'));
 console.log(apl('string*'));
 console.log(apl('string'));
+console.log(apl('string'));
+console.log(apl('strin*g'));
+console.log(apl('string'));

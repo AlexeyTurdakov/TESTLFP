@@ -1,12 +1,11 @@
 
 
-
-function apl(str) {
-    return Boolean(str.match(/\*/));
+function func(arr) {
+    return arr.reduce((acc = 0, cur) => {
+        if (cur % 2 === 0) {
+           return acc + Math.sqrt(cur)
+        }
+    }, 0)
 }
 
-console.log(apl('string'));
-console.log(apl('st*ring'));
-console.log(apl('string*'));
-console.log(apl('string'));
-console.log(apl('string'));
+console.log(func([3,9,4,16, 0, 36]));

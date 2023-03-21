@@ -11,4 +11,3 @@ function func(arr) {
   return num;
 }
 
-console.log(func([3, 4, 9, 16, 1, 0]));

@@ -1,11 +1,14 @@
-
-
 function func(arr) {
-    return arr.reduce((acc = 0, cur) => {
-        if (cur % 2 === 0) {
-           return acc + Math.sqrt(cur)
-        }
-    }, 0)
+  let num = 0;
+  for (let a of arr) {
+    if (a % 2 === 0) {
+      console.log(Number.isInteger(Math.sqrt(a)));
+      if (Number.isInteger(Math.sqrt(a))) {
+        num = num + Math.sqrt(a);
+      }
+    }
+  }
+  return num;
 }
 
-console.log(func([3,9,4,16, 0, 36]));
+console.log(func([3, 4, 9, 16, 1, 0]));
